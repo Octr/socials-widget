@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+
+    }
+
+    .icon {
+      /* Change the icon size here */
+      font-size: 2em;
+      /* Change the icons colours here*/
+      color: #000000
+    }
+
+    html.theme-dark .icon{
+        /* Change the icons colours here*/
+      color: #ffffff
+    }
+
+
+    .github:hover {
+      color: #21b1ff;
+    }
+
+    .linkedin:hover {
+      color: #ffd800;
+    }
+
+    .itch:hover {
+      color: #ff218C;
+    }
+
+    .bluesky:hover {
+      color: #21b1ff;
+    }
+
+    .artstation:hover {
+      color: #21b1ff;
+    }
+
+
+    .mail {
+      color: #21b1ff;
+    }
+
+    .mail:hover {
+      color: white;
+    }
+
+    html.theme-dark .mail:hover{
+        /* Change the icons colours here*/
+      color: black
+    }
+
+    .social {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    }
+
+    .social:hover {
+    transform: translateY(-5px);
+    }
+    
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+    <div class="wrapper">
+
+      <!-- Start blog Icon -->
+      <div id="github" onclick="navigate(this.id)" class="social">
+        <span class="icon github"><i class="fa-brands fa-github"></i></span>
+      </div>
+      <!-- End blog Icon -->
+
+      <!-- Start linkedin Icon -->
+      <div id="linkedin" onclick="navigate(this.id)" class="social">
+        <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
+      </div>
+      <!-- End linkedin Icon -->
+
+      <!-- Start itch Icon -->
+      <div id="itch" onclick="navigate(this.id)" class="social">
+        <span class="icon itch"><i class="fa-brands fa-itch-io"></i></span>
+      </div>
+      <!-- End itch Icon -->
+
+      <!-- Start bluesky Icon -->
+      <div id="bluesky" onclick="navigate(this.id)" class="social">
+        <span class="icon bluesky"><i class="fa-brands fa-bluesky"></i></span>
+      </div>
+      <!-- End bluesky Icon -->
+
+      <!-- Start artstation Icon -->
+      <div id="artstation" onclick="navigate(this.id)" class="social">
+        <span class="icon artstation"><i class="fa-brands fa-artstation"></i></span>
+      </div>
+      <!-- End artstation Icon -->
+
+      <!-- Start artstation Icon -->
+      <div id="mail" onclick="navigate(this.id)" class="social">
+        <span class="icon mail"><i class="fa-solid fa-envelope"></i></span>
+      </div>
+      <!-- End artstation Icon -->
+
+    </div>
+
+
+
+
+    <script>
+        function navigate(id) {
+          let url = "";
+      
+          switch (id) {
+            case "github":
+              url = "https://github.com/";
+              break;
+            case "linkedin":
+              url = "https://www.linkedin.com/in/paris-mutter/";
+              break;
+            case "artstation":
+            url = "https://www.artstation.com/octr";
+            break;
+            case "email":
+              url = "mailto:contact@octr.dev";
+              break;
+            default:
+              console.warn("Invalid ID provided.");
+              return;
+          }
+      
+          window.open(url, '_blank').focus();
+        }
+      </script>
+
+
+
+  </body>
+
+</html>
