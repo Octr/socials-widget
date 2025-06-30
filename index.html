@@ -161,17 +161,21 @@
       
           switch (id) {
             case "github":
-              url = "https://github.com/";
-              break;
+              url = "https://github.com/Octr";
+            break;
             case "linkedin":
               url = "https://www.linkedin.com/in/paris-mutter/";
-              break;
-            case "artstation":
-            url = "https://www.artstation.com/octr";
             break;
+            case "artstation":
+              url = "https://www.artstation.com/octr";
+            break;
+            case "bluesky":
+              url = "https://bsky.app/profile/octr.dev";
+            case "itch":
+              url = "https://octrs.itch.io/";
             case "email":
               url = "mailto:contact@octr.dev";
-              break;
+            break;
             default:
               console.warn("Invalid ID provided.");
               return;
@@ -179,6 +183,16 @@
       
           window.open(url, '_blank').focus();
         }
+
+        window.addEventListener('message', (event) => {
+        if (!event.data || !event.data.theme) return;
+
+        if (event.data.theme === 'dark') {
+          document.documentElement.classList.add('theme-dark');
+        } else {
+          document.documentElement.classList.remove('theme-dark');
+        }
+      });
       </script>
 
 
