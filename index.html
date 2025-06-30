@@ -29,62 +29,80 @@
     }
 
     .icon {
-      /* Change the icon size here */
-      font-size: 2em;
-      /* Change the icons colours here*/
-      color: #000000
-    }
+    font-size: 2em;
+    color: #000000; /* base black for light mode */
+    transition: color 0.3s ease;
+  }
 
-    html.theme-dark .icon{
-        /* Change the icons colours here*/
-      color: #ffffff
-    }
+  html.theme-dark .icon {
+    color: #ffffff; /* base white for dark mode */
+  }
 
+  /* Hover colors for light mode */
+  .github:hover {
+    color: #21b1ff;
+  }
 
-    .github:hover {
-      color: #21b1ff;
-    }
+  .linkedin:hover {
+    color: #ffd800;
+  }
 
-    .linkedin:hover {
-      color: #ffd800;
-    }
+  .itch:hover {
+    color: #ff218C;
+  }
 
-    .itch:hover {
-      color: #ff218C;
-    }
+  .bluesky:hover {
+    color: #21b1ff;
+  }
 
-    .bluesky:hover {
-      color: #21b1ff;
-    }
+  .artstation:hover {
+    color: #21b1ff;
+  }
 
-    .artstation:hover {
-      color: #21b1ff;
-    }
+  .mail {
+    color: #21b1ff; /* mail icon base color */
+    transition: color 0.3s ease;
+  }
 
+  .mail:hover {
+    color: white;
+  }
 
-    .mail {
-      color: #21b1ff;
-    }
+  /* Hover colors for dark mode */
+  html.theme-dark .github:hover {
+    color: #21b1ff;
+  }
 
-    .mail:hover {
-      color: white;
-    }
+  html.theme-dark .linkedin:hover {
+    color: #ffd800;
+  }
 
-    html.theme-dark .mail:hover{
-        /* Change the icons colours here*/
-      color: black
-    }
+  html.theme-dark .itch:hover {
+    color: #ff218C;
+  }
 
-    .social {
-    position: relative;
-    margin: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    }
+  html.theme-dark .bluesky:hover {
+    color: #21b1ff;
+  }
 
-    .social:hover {
-    transform: translateY(-5px);
-    }
+  html.theme-dark .artstation:hover {
+    color: #21b1ff;
+  }
+
+  html.theme-dark .mail:hover {
+    color: black;
+  }
+
+  .social {
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  }
+
+  .social:hover {
+  transform: translateY(-5px);
+  }
     
   </style>
 
