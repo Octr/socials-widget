@@ -55,8 +55,17 @@
     color: #21b1ff;
   }
 
+  .twitter:hover {
+    color: #ffd800;
+  }
+
+
   .artstation:hover {
     color: #21b1ff;
+  }
+
+  .sketchfab:hover {
+    color: #ff218C;
   }
 
   .mail {
@@ -89,8 +98,16 @@
     color: #21b1ff;
   }
 
+  html.theme-dark .twitter:hover {
+    color: #ffd800;
+  }
+
   html.theme-dark .artstation:hover {
     color: #21b1ff;
+  }
+
+  html.theme-dark .sketchfab:hover {
+    color: #ff218C;
   }
 
   html.theme-dark .mail:hover {
@@ -122,37 +139,41 @@
       <div id="github" onclick="navigate(this.id)" class="social">
         <span class="icon github"><i class="fa-brands fa-github"></i></span>
       </div>
-      <!-- End blog Icon -->
 
       <!-- Start linkedin Icon -->
       <div id="linkedin" onclick="navigate(this.id)" class="social">
         <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
       </div>
-      <!-- End linkedin Icon -->
 
       <!-- Start itch Icon -->
       <div id="itch" onclick="navigate(this.id)" class="social">
         <span class="icon itch"><i class="fa-brands fa-itch-io"></i></span>
       </div>
-      <!-- End itch Icon -->
 
       <!-- Start bluesky Icon -->
       <div id="bluesky" onclick="navigate(this.id)" class="social">
         <span class="icon bluesky"><i class="fa-brands fa-bluesky"></i></span>
       </div>
-      <!-- End bluesky Icon -->
+
+      <!-- Start twitter Icon -->
+      <div id="twitter" onclick="navigate(this.id)" class="social">
+        <span class="icon twitter"><i class="fa-brands fa-twitter"></i></span>
+      </div>
 
       <!-- Start artstation Icon -->
       <div id="artstation" onclick="navigate(this.id)" class="social">
         <span class="icon artstation"><i class="fa-brands fa-artstation"></i></span>
       </div>
-      <!-- End artstation Icon -->
 
-      <!-- Start artstation Icon -->
+      <!-- Start sketchfab Icon -->
+      <div id="sketchfab" onclick="navigate(this.id)" class="social">
+        <span class="icon sketchfab"><i class="fa-solid fa-cube"></i></span>
+      </div>
+
+      <!-- Start mail Icon -->
       <div id="mail" onclick="navigate(this.id)" class="social">
         <span class="icon mail"><i class="fa-solid fa-envelope"></i></span>
       </div>
-      <!-- End artstation Icon -->
 
     </div>
 
@@ -173,8 +194,14 @@
             case "artstation":
               url = "https://www.artstation.com/octr";
             break;
+            case "sketchfab":
+              url = "https://sketchfab.com/octrs";
+            break;
             case "bluesky":
               url = "https://bsky.app/profile/octr.dev";
+            break;
+            case "twitter":
+              url = "https://x.com/OctrDev";
             break;
             case "itch":
               url = "https://octrs.itch.io/";
